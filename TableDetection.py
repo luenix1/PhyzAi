@@ -13,7 +13,10 @@ def findTable(frame):
         if size > 0:
             draw = cv.drawContours(frame, cnt, -1, (0,255,0), 10)
 
+    
+    cv.waitKey(0)
     cv.imshow("blur", blur)
     cv.imshow("frame", frame)
     # cv.imshow("BW", BW)
     cv.imshow("edges",edges)
+    cv.destroyAllWindows
